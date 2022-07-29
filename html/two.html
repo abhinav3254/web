@@ -44,7 +44,7 @@
 
     <!-- specify that only specific HTML elements should be affected by a class. -->
 
-    <style>
+    <!-- <style>
         p.class {
             text-align: center;
             color: brown;
@@ -61,10 +61,26 @@
 
     <h1 class="class">
         This is not styled evening having a class attribute because only class will act with p elements
-    </h1>
+    </h1> -->
 
     <!-- ****************************************************** -->
 
+    <!-- The CSS Universal Selector -->
+
+    <style>
+        *{
+            text-align: center;
+            color: yellow;
+        }
+    </style>
+
+    <h1>
+        This is CSS Universal Selector
+    </h1>
+
+    <p>
+        This affects all the tags in the sheet
+    </p>
     
 </body>
 </html>
