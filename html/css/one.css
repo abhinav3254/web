@@ -1,0 +1,5 @@
+/* .h1 means which tag uses the class="h1" only those tags we get affected with these tags */
+.h1 {
+    text-align: center;
+    color: cadetblue;
+}
