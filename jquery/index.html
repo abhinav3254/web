@@ -9,13 +9,46 @@
 
 <body>
 
-    <p>This is My Body</p>
+    <p>This is My Paragraph</p>
+    <button>click me to hide</button>
+
+    <button>1</button>
+    <button>2</button>
+    <button>3</button>
+    <button>4</button>
 
 </body>
 
 <script src="./jQuery/jquery-3.7.1.min.js"></script>
 <script>
+    // here $ is jQuery
     console.log($);
+    // we can also write this way
+    console.log(jQuery);
+    console.log('learning jQuery');
+
+    // syntax of jQuery
+    // $('selector').action()
+
+    $('p').click();
+    $('p').click(function () {
+        // this will be executed when anything we will be clicked
+        console.log('you cliked on p');
+    });
+
+    // $('button').click(function () {
+    //     $('p').hide();
+    // });
+
+    // now in this case we used the keyword this, it will only bind any event
+    // to that particular element only
+    $('button').click(function () {
+        $(this).hide();
+    });
+
+    // for class and id
+    // similary for class use .class-name
+    // and for id use #id-name
 </script>
 
 </html>
