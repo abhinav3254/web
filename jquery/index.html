@@ -12,6 +12,11 @@
     <p>This is My Paragraph</p>
     <button>click me to hide</button>
 
+    <button>1</button>
+    <button>2</button>
+    <button>3</button>
+    <button>4</button>
+
 </body>
 
 <script src="./jQuery/jquery-3.7.1.min.js"></script>
@@ -31,8 +36,14 @@
         console.log('you cliked on p');
     });
 
+    // $('button').click(function () {
+    //     $('p').hide();
+    // });
+
+    // now in this case we used the keyword this, it will only bind any event
+    // to that particular element only
     $('button').click(function () {
-        $('p').hide();
+        $(this).hide();
     });
 </script>
 
