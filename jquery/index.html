@@ -21,34 +21,42 @@
 
 <script src="./jQuery/jquery-3.7.1.min.js"></script>
 <script>
-    // here $ is jQuery
-    console.log($);
-    // we can also write this way
-    console.log(jQuery);
-    console.log('learning jQuery');
+    // always try to try jQuery inside this function
+    // because if page is not loaded and you apply jQuery before that then 
+    // this will create and issue
+    // so always put your jQuery inside this function
+    $(document).ready(function () {
 
-    // syntax of jQuery
-    // $('selector').action()
+        // here $ is jQuery
+        console.log($);
+        // we can also write this way
+        console.log(jQuery);
+        console.log('learning jQuery');
 
-    $('p').click();
-    $('p').click(function () {
-        // this will be executed when anything we will be clicked
-        console.log('you cliked on p');
-    });
+        // syntax of jQuery
+        // $('selector').action()
 
-    // $('button').click(function () {
-    //     $('p').hide();
-    // });
+        $('p').click();
+        $('p').click(function () {
+            // this will be executed when anything we will be clicked
+            console.log('you cliked on p');
+        });
 
-    // now in this case we used the keyword this, it will only bind any event
-    // to that particular element only
-    $('button').click(function () {
-        $(this).hide();
-    });
+        // $('button').click(function () {
+        //     $('p').hide();
+        // });
 
-    // for class and id
-    // similary for class use .class-name
-    // and for id use #id-name
+        // now in this case we used the keyword this, it will only bind any event
+        // to that particular element only
+        $('button').click(function () {
+            $(this).hide();
+        });
+
+        // for class and id
+        // similary for class use .class-name
+        // and for id use #id-name
+
+    })
 </script>
 
 </html>
