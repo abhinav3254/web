@@ -10,6 +10,7 @@
 <body>
 
     <p>This is My Paragraph</p>
+    <button>click me to hide</button>
 
 </body>
 
@@ -28,6 +29,10 @@
     $('p').click(function () {
         // this will be executed when anything we will be clicked
         console.log('you cliked on p');
+    });
+
+    $('button').click(function () {
+        $('p').hide();
     });
 </script>
 
