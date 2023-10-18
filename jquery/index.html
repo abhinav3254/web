@@ -9,13 +9,26 @@
 
 <body>
 
-    <p>This is My Body</p>
+    <p>This is My Paragraph</p>
 
 </body>
 
 <script src="./jQuery/jquery-3.7.1.min.js"></script>
 <script>
+    // here $ is jQuery
     console.log($);
+    // we can also write this way
+    console.log(jQuery);
+    console.log('learning jQuery');
+
+    // syntax of jQuery
+    // $('selector').action()
+
+    $('p').click();
+    $('p').click(function () {
+        // this will be executed when anything we will be clicked
+        console.log('you cliked on p');
+    });
 </script>
 
 </html>
